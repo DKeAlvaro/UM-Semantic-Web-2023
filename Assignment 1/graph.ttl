@@ -16,6 +16,7 @@ Amazon:Apple-MacBook-Air a <https://dbpedia.org/ontology/product> ;
 
 Amazon:Ferrero-Chocolate a <https://dbpedia.org/ontology/product> ;
     ns1:Brand <https://www.ferrerorocher.com/es/es/> ;
+    ns1:Flavour "sweet"^^xsd:string ;
     ns1:Subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16242078031&ref_=nav_em_fg_groc_0_2_15_2> ;
     ns1:Unit "1290"^^xsd:float ;
     ns1:Weight "1.5"^^xsd:float ;
