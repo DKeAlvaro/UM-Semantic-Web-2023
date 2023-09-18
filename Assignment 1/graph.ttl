@@ -1,0 +1,39 @@
+@prefix Amazon: <https://www.amazon.nl/-/en/> .
+@prefix ns1: <https://dbpedia.org/page/> .
+@prefix ns2: <https://dbpedia.org/property/> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+Amazon:Apple-MacBook-Air a <https://dbpedia.org/ontology/product> ;
+    ns1:Brand <https://www.apple.com/by/> ;
+    ns1:Central_processing_unit <https://en.wikipedia.org/wiki/Apple_M1> ;
+    ns1:Password <https://en.wikipedia.org/wiki/Touch_ID> ;
+    ns1:Subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16269066031&ref_=nav_em_el_all_electronics_0_2_9_2> ;
+    ns2:display <https://en.wikipedia.org/wiki/Retina_display> ;
+    ns2:name "MacBook Air" ;
+    schema:operatingSystem <https://apps.apple.com/us/app/macos-mojave/id1398502828?mt=12> ;
+    schema:price "919.0"^^xsd:float .
+
+Amazon:Ferrero-Chocolate a <https://dbpedia.org/ontology/product> ;
+    ns1:Brand <https://www.ferrerorocher.com/es/es/> ;
+    ns1:Subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16242078031&ref_=nav_em_fg_groc_0_2_15_2> ;
+    ns1:Unit "1290"^^xsd:float ;
+    ns1:Weight "1.5"^^xsd:float ;
+    schema:expirationDate "2023-10-07"^^xsd:date .
+
+Amazon:It-Ends-With-Us a <https://dbpedia.org/ontology/product> ;
+    ns1:Author <https://en.wikipedia.org/wiki/Colleen_Hoover> ;
+    ns1:Book_type <https://en.wikipedia.org/wiki/Paperback> ;
+    ns1:Genre <https://en.wikipedia.org/wiki/Romance_novel> ;
+    ns1:Language <https://en.wikipedia.org/wiki/English_language> ;
+    ns1:Subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16241779031&ref_=nav_em_bo_all_0_2_7_2> ;
+    ns1:Title "It Ends With Us" ;
+    schema:price "10.19"^^xsd:float ;
+    schema:publisher <https://www.simonandschuster.com/> .
+
+<https://www.amazon.nl/-/en/gp/browse.html?node=16241779031&ref_=nav_em_bo_all_0_2_7_2> a <https://dbpedia.org/ontology/category> .
+
+<https://www.amazon.nl/-/en/gp/browse.html?node=16242078031&ref_=nav_em_fg_groc_0_2_15_2> a <https://dbpedia.org/ontology/category> .
+
+<https://www.amazon.nl/-/en/gp/browse.html?node=16269066031&ref_=nav_em_el_all_electronics_0_2_9_2> a <https://dbpedia.org/ontology/category> .
+
