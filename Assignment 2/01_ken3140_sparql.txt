@@ -1,0 +1,99 @@
+
+
+------------------------------------------------------------------------------------------------------------------------------
+SPARQL results
+------------------------------------------------------------------------------------------------------------------------------
+
+Query A: 
+
+
+-- INSERT SPARQL FORMULATION OF YOUR QUERY--
+
+
+Results:
+
+
+------
+------
+
+Query A: 
+
+
+-- INSERT SPARQL FORMULATION OF YOUR QUERY--
+
+
+Results:
+
+
+------------
+
+Query B: 
+
+
+-- INSERT SPARQL FORMULATION OF YOUR QUERY--
+
+
+Results:
+
+
+------------
+
+Query C: 
+
+
+-- INSERT SPARQL FORMULATION OF YOUR QUERY--
+
+
+Results:
+
+
+------------
+
+Query D: 
+
+
+-- INSERT SPARQL FORMULATION OF YOUR QUERY--
+
+
+Results:
+
+
+------------
+
+Query E: 
+
+
+-- INSERT SPARQL FORMULATION OF YOUR QUERY--
+
+
+Results:
+
+
+------------
+
+Query F: 
+
+
+-- INSERT SPARQL FORMULATION OF YOUR QUERY--
+
+
+Results:
+
+
+------
+------------
+
+Query G: 
+
+-- INSERT TEST OF YOUR QUERY QUESTION -
+
+
+-- INSERT SPARQL FORMULATION OF YOUR QUERY--
+
+
+Results:
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+
