@@ -1,0 +1,2 @@
+EXPORT FROM PROTEGE 
+This RDF document must include any data and reasoner inferences.
