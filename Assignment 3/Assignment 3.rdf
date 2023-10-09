@@ -1,0 +1,167 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/alvaro/ontologies/2023/9/amazon/"
+     xml:base="http://www.semanticweb.org/alvaro/ontologies/2023/9/amazon/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/alvaro/ontologies/2023/9/amazon"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alvaro/ontologies/2023/9/amazon#Brand -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alvaro/ontologies/2023/9/amazon#Brand">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alvaro/ontologies/2023/9/amazon#hasBrand -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alvaro/ontologies/2023/9/amazon#hasBrand">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alvaro/ontologies/2023/9/amazon#books -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alvaro/ontologies/2023/9/amazon#books"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alvaro/ontologies/2023/9/amazon#brand -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alvaro/ontologies/2023/9/amazon#brand"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alvaro/ontologies/2023/9/amazon#camera -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alvaro/ontologies/2023/9/amazon#camera">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alvaro/ontologies/2023/9/amazon#electronics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alvaro/ontologies/2023/9/amazon#electronics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alvaro/ontologies/2023/9/amazon#electronics"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alvaro/ontologies/2023/9/amazon#groceries -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alvaro/ontologies/2023/9/amazon#groceries"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alvaro/ontologies/2023/9/amazon#keyboard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alvaro/ontologies/2023/9/amazon#keyboard">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alvaro/ontologies/2023/9/amazon#electronics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alvaro/ontologies/2023/9/amazon#laptop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alvaro/ontologies/2023/9/amazon#laptop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alvaro/ontologies/2023/9/amazon#electronics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alvaro/ontologies/2023/9/amazon#phone -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alvaro/ontologies/2023/9/amazon#phone">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alvaro/ontologies/2023/9/amazon#electronics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alvaro/ontologies/2023/9/amazon#printer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alvaro/ontologies/2023/9/amazon#printer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alvaro/ontologies/2023/9/amazon#electronics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alvaro/ontologies/2023/9/amazon#watch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alvaro/ontologies/2023/9/amazon#watch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alvaro/ontologies/2023/9/amazon#electronics"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alvaro/ontologies/2023/9/amazon#Apple -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alvaro/ontologies/2023/9/amazon#Apple"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alvaro/ontologies/2023/9/amazon#MacBook_Air -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alvaro/ontologies/2023/9/amazon#MacBook_Air">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alvaro/ontologies/2023/9/amazon#laptop"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alvaro/ontologies/2023/9/amazon#Surface_Pro_4_Tablet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alvaro/ontologies/2023/9/amazon#Surface_Pro_4_Tablet"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
