@@ -1,9 +1,18 @@
 @prefix ns1: <https://dbpedia.org/property/> .
 @prefix ns2: <https://dbpedia.org/page/> .
 @prefix ns3: <https://dbpedia.org/ontology/> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns3:MobilePhone ns2:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16269066031&ref_=nav_em_el_all_electronics_0_2_9_2> .
+
+ns2:Computer ns2:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16269066031&ref_=nav_em_el_all_electronics_0_2_9_2> .
+
+ns2:Digital_camera ns2:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16269066031&ref_=nav_em_el_all_electronics_0_2_9_2> .
+
+ns2:Smartwatch ns2:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16269066031&ref_=nav_em_el_all_electronics_0_2_9_2> .
+
+ns2:Tablet ns2:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16269066031&ref_=nav_em_el_all_electronics_0_2_9_2> .
 
 <https://www.amazon.nl/-/en/Apple-2022-MacBook-Air-chip/dp/B0B3CQW13T/ref=sr_1_1_sspa?crid=25CUOIOQQGM1&keywords=macbook+air+m2&qid=1695817653&sprefix=macb%2Caps%2C101&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1> a ns3:product ;
     ns2:Central_processing_unit <https://en.wikipedia.org/wiki/Apple_M2> ;
@@ -15,22 +24,20 @@
     schema:price "1359.0"^^xsd:float .
 
 <https://www.amazon.nl/-/en/Balance-White-Beige-Style-Code/dp/B0C9JFWYFN/ref=sr_1_2?crid=2WVLPNA3J1UGB&keywords=new+balance+550+dames&qid=1695891276&sprefix=new%2Bbalance%2B550%2Caps%2C60&sr=8-2> a ns3:product ;
-    ns1:name "Reebok uniseks-volwassene Club CSneaker" ;
-    schema:Brand <https://nl.newbalance.eu/nl> ;
-    schema:category <https://www.amazon.nl/-/en/gp/browse.html?node=16241836031&ref_=nav_em__cog_0_2_13_2> ;
-    schema:color <https://en.wikipedia.org/wiki/White> ;
-    schema:department <https://en.wikipedia.org/wiki/Women> ;
-    schema:price "170.0"^^xsd:float ;
-    schema:size "38"^^xsd:float .
-
-<https://www.amazon.nl/-/en/Beauty-Pinch-Liquid-Blush-Happy/dp/B08JKTGRGT/ref=sr_1_1?crid=12XPB6W30XYA0&keywords=pixie+blush&qid=1695820054&sprefix=pixie+blush%2Caps%2C99&sr=8-1> a ns3:product ;
     ns3:colourName "Happy" ;
     ns2:Cosmetics <https://www.example.com/Liquid_Blush> ;
-    ns1:name "Rare beauty blush" ;
-    schema:Brand <https://www.rarebeauty.com/> ;
-    schema:category <https://www.amazon.nl/-/en/gp/browse.html?node=16241721031&ref_=nav_em_hb_beauty_0_2_16_2> ;
+    ns1:name "Rare beauty blush",
+        "Reebok uniseks-volwassene Club CSneaker" ;
+    schema:Brand <https://nl.newbalance.eu/nl>,
+        <https://www.rarebeauty.com/> ;
+    schema:Rating "38"^^xsd:float ;
+    schema:category <https://www.amazon.nl/-/en/gp/browse.html?node=16241721031&ref_=nav_em_hb_beauty_0_2_16_2>,
+        <https://www.amazon.nl/-/en/gp/browse.html?node=16241836031&ref_=nav_em__cog_0_2_13_2> ;
+    schema:color <https://en.wikipedia.org/wiki/White> ;
     schema:countryOfOrigin <https://en.wikipedia.org/wiki/Italy> ;
-    schema:price "45.0"^^xsd:float .
+    schema:department <https://en.wikipedia.org/wiki/Women> ;
+    schema:price "45.0"^^xsd:float,
+        "170.0"^^xsd:float .
 
 <https://www.amazon.nl/-/en/Canon-Camera-F3-5-5-6-Screen-Sensor/dp/B07BMV268V/ref=sr_1_5?crid=2FDQIB4UHD3US&keywords=canon+camera&qid=1695820401&sprefix=canon+%2Caps%2C100&sr=8-5> a ns3:product ;
     ns2:Exposure <https://www.canon.com.au/get-inspired/glossary/manual-exposure#:~:text=Manual%20Exposure%20is%20when%20the,the%20output%20of%20the%20image.> ;
@@ -46,7 +53,6 @@
     ns2:Genre <https://en.wikipedia.org/wiki/Romance_novel> ;
     ns2:Language <https://en.wikipedia.org/wiki/English_language> ;
     ns2:Title "It Ends With Us" ;
-    ns2:subclass <https://en.wikipedia.org/wiki/Romance_novel> ;
     schema:author <https://en.wikipedia.org/wiki/Colleen_Hoover> ;
     schema:category <https://www.amazon.nl/-/en/gp/browse.html?node=16241779031&ref_=nav_em_bo_all_0_2_7_2> ;
     schema:price "12.99"^^xsd:float ;
@@ -63,7 +69,7 @@
 
 <https://www.amazon.nl/-/en/Havanna-Dulce-Leche-250/dp/B00H8QZKOK/ref=sr_1_2?crid=1J46OTVE2MZ3P&keywords=dulce+de+leche&qid=1695820234&sprefix=dulce+de+%2Caps%2C87&sr=8-2> a ns3:product ;
     ns3:creator <https://www.example.com/Benajmin_Sisterna> ;
-    ns2:subclass <https://en.wikipedia.org/wiki/Caramel> ;
+    ns2:Flavor <https://en.wikipedia.org/wiki/Caramel> ;
     ns1:name "Dulce de Leche" ;
     schema:Brand <https://www.havanna.com.ar/> ;
     schema:category <https://www.amazon.nl/-/en/gp/browse.html?node=16242078031&ref_=nav_em_fg_groc_0_2_15_2> ;
@@ -97,6 +103,7 @@
     schema:Brand <https://www.amazon.com.be/s?k=MARIKOO&language=en&ref=bl_sl_s_ap_web_0> ;
     schema:category <https://www.amazon.nl/-/en/gp/browse.html?node=16241836031&ref_=nav_em__cog_0_2_13_2> ;
     schema:color <https://en.wikipedia.org/wiki/Red> ;
+    schema:department <https://en.wikipedia.org/wiki/Women> ;
     schema:material <https://en.wikipedia.org/wiki/Wool> ;
     schema:price "99.95"^^xsd:float .
 
@@ -147,6 +154,7 @@
 
 <https://www.amazon.nl/-/en/Professional-Lipstick-pigmented-long-lasting-formula/dp/B07BR2MP4B/ref=sr_1_14?crid=MQMMI8VKZMFW&keywords=makeup&qid=1695820165&sprefix=makeup%2Caps%2C95&sr=8-14> a ns3:product ;
     ns3:colourName "Single" ;
+    ns2:Cosmetics <https://en.wikipedia.org/wiki/Lip_gloss> ;
     ns1:finish <https://en.wikipedia.org/wiki/Matte> ;
     ns1:name "NYX Professional Makeup Lipstick" ;
     schema:Brand <https://www.nyxcosmetics.com/> ;
@@ -161,8 +169,6 @@
     ns2:Language <https://en.wikipedia.org/wiki/English_language> ;
     ns2:Title "Letters to a Young Poet",
         "The Hobbit" ;
-    ns2:subclass <https://en.wikipedia.org/wiki/Epic_(genre)>,
-        <https://en.wikipedia.org/wiki/Poetry> ;
     schema:author <https://en.wikipedia.org/wiki/J._R._R._Tolkien>,
         <https://nl.wikipedia.org/wiki/Rainer_Maria_Rilke> ;
     schema:category <https://www.amazon.nl/-/en/gp/browse.html?node=16241779031&ref_=nav_em_bo_all_0_2_7_2> ;
@@ -173,6 +179,7 @@
 
 <https://www.amazon.nl/-/en/Rimmel-London-Natural-Bronzing-Bronzer/dp/B08ZPFFBGD/ref=sr_1_20?crid=MQMMI8VKZMFW&keywords=makeup&qid=1695820165&sprefix=makeup%2Caps%2C95&sr=8-20&th=1> a ns3:product ;
     ns3:colourName "002 Bronze" ;
+    ns2:Cosmetics <https://en.wiktionary.org/wiki/bronzer> ;
     ns1:finish <https://en.wikipedia.org/wiki/Matte> ;
     ns1:name "Rimmel London Natural Bronzing Powder Bronzer" ;
     schema:Brand <https://www.amazon.com.be/s?k=MARIKOO&language=en&ref=bl_sl_s_ap_web_0> ;
@@ -185,7 +192,6 @@
     ns2:Genre <https://en.wikipedia.org/wiki/Thriller_(genre)> ;
     ns2:Language <https://en.wikipedia.org/wiki/English_language> ;
     ns2:Title "The Retreat" ;
-    ns2:subclass <https://en.wikipedia.org/wiki/Thriller_(genre)> ;
     schema:author <https://sarahpearse.co.uk/#author> ;
     schema:category <https://www.amazon.nl/-/en/gp/browse.html?node=16241779031&ref_=nav_em_bo_all_0_2_7_2> ;
     schema:price "6.99"^^xsd:float ;
@@ -214,7 +220,6 @@
     ns2:Genre <https://en.wikipedia.org/wiki/Tragedy> ;
     ns2:Language <https://en.wikipedia.org/wiki/English_language> ;
     ns2:Title "MacBeth" ;
-    ns2:subclass <https://en.wikipedia.org/wiki/Tragedy> ;
     schema:author <https://en.wikipedia.org/wiki/William_Shakespeare> ;
     schema:category <https://www.amazon.nl/-/en/gp/browse.html?node=16241779031&ref_=nav_em_bo_all_0_2_7_2> ;
     schema:price "8.99"^^xsd:float ;
@@ -238,15 +243,45 @@
     schema:price "71.99"^^xsd:float ;
     schema:valueAddedTaxIncluded <https://example.com/Included_VAT> .
 
-<https://www.rarebeauty.com/> rdfs:label "rare beauty" .
+<https://en.wikipedia.org/wiki/Caramel> ns2:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16242078031&ref_=nav_em_fg_groc_0_2_15_2> .
 
-<https://www.amazon.nl/-/en/gp/browse.html?node=16241721031&ref_=nav_em_hb_beauty_0_2_16_2> a schema:category .
+<https://en.wikipedia.org/wiki/Epic_(genre)> ns2:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16241779031&ref_=nav_em_bo_all_0_2_7_2> .
 
-<https://www.amazon.nl/-/en/gp/browse.html?node=16241779031&ref_=nav_em_bo_all_0_2_7_2> a schema:category .
+<https://en.wikipedia.org/wiki/Hazelnut> ns2:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16242078031&ref_=nav_em_fg_groc_0_2_15_2> .
+
+<https://en.wikipedia.org/wiki/Lip_gloss> ns2:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16241721031&ref_=nav_em_hb_beauty_0_2_16_2> .
+
+<https://en.wikipedia.org/wiki/Poetry> ns2:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16241779031&ref_=nav_em_bo_all_0_2_7_2> .
+
+<https://en.wikipedia.org/wiki/Romance_novel> ns2:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16241779031&ref_=nav_em_bo_all_0_2_7_2> .
+
+<https://en.wikipedia.org/wiki/Thriller_(genre)> ns2:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16241779031&ref_=nav_em_bo_all_0_2_7_2> .
+
+<https://en.wikipedia.org/wiki/Tragedy> ns2:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16241779031&ref_=nav_em_bo_all_0_2_7_2> .
+
+<https://en.wikipedia.org/wiki/Unisex> ns2:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16241836031&ref_=nav_em__cog_0_2_13_2> .
+
+<https://en.wiktionary.org/wiki/bronzer> ns2:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16241721031&ref_=nav_em_hb_beauty_0_2_16_2> .
+
+<https://en.wiktionary.org/wiki/spicy> ns2:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16242078031&ref_=nav_em_fg_groc_0_2_15_2> .
+
+<https://www.example.com/Setting_Spray> ns2:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16241721031&ref_=nav_em_hb_beauty_0_2_16_2> .
+
+<https://en.wikipedia.org/wiki/Boy> ns2:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16241836031&ref_=nav_em__cog_0_2_13_2> .
+
+<https://en.wikipedia.org/wiki/Chocolate> ns2:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16242078031&ref_=nav_em_fg_groc_0_2_15_2> .
+
+<https://en.wikipedia.org/wiki/Women> ns2:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16241836031&ref_=nav_em__cog_0_2_13_2> .
+
+<https://www.example.com/Liquid_Blush> ns2:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16241721031&ref_=nav_em_hb_beauty_0_2_16_2> .
 
 <https://www.amazon.nl/-/en/gp/browse.html?node=16241836031&ref_=nav_em__cog_0_2_13_2> a schema:category .
 
+<https://www.amazon.nl/-/en/gp/browse.html?node=16241721031&ref_=nav_em_hb_beauty_0_2_16_2> a schema:category .
+
 <https://www.amazon.nl/-/en/gp/browse.html?node=16242078031&ref_=nav_em_fg_groc_0_2_15_2> a schema:category .
+
+<https://www.amazon.nl/-/en/gp/browse.html?node=16241779031&ref_=nav_em_bo_all_0_2_7_2> a schema:category .
 
 <https://www.amazon.nl/-/en/gp/browse.html?node=16269066031&ref_=nav_em_el_all_electronics_0_2_9_2> a schema:category .
 
