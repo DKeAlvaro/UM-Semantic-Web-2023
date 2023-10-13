@@ -4,18 +4,9 @@
 @prefix schema: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-ns3:MobilePhone ns2:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16269066031&ref_=nav_em_el_all_electronics_0_2_9_2> .
-
-ns2:Computer ns2:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16269066031&ref_=nav_em_el_all_electronics_0_2_9_2> .
-
-ns2:Digital_camera ns2:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16269066031&ref_=nav_em_el_all_electronics_0_2_9_2> .
-
-ns2:Smartwatch ns2:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16269066031&ref_=nav_em_el_all_electronics_0_2_9_2> .
-
-ns2:Tablet ns2:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16269066031&ref_=nav_em_el_all_electronics_0_2_9_2> .
-
 <https://www.amazon.nl/-/en/Apple-2022-MacBook-Air-chip/dp/B0B3CQW13T/ref=sr_1_1_sspa?crid=25CUOIOQQGM1&keywords=macbook+air+m2&qid=1695817653&sprefix=macb%2Caps%2C101&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1> a ns3:product ;
     ns2:Central_processing_unit <https://en.wikipedia.org/wiki/Apple_M2> ;
+    ns2:subclass ns2:Computer ;
     ns1:display <https://en.wikipedia.org/wiki/Retina_display> ;
     ns1:name "MacBook Air with M2 chip" ;
     schema:Brand <https://www.apple.com/by/> ;
@@ -42,6 +33,7 @@ ns2:Tablet ns2:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16269066
 <https://www.amazon.nl/-/en/Canon-Camera-F3-5-5-6-Screen-Sensor/dp/B07BMV268V/ref=sr_1_5?crid=2FDQIB4UHD3US&keywords=canon+camera&qid=1695820401&sprefix=canon+%2Caps%2C100&sr=8-5> a ns3:product ;
     ns2:Exposure <https://www.canon.com.au/get-inspired/glossary/manual-exposure#:~:text=Manual%20Exposure%20is%20when%20the,the%20output%20of%20the%20image.> ;
     ns2:Zoom <https://example.com/3x> ;
+    ns2:subclass ns2:Digital_camera ;
     ns1:name "Canon EOS 2000D" ;
     schema:Brand <https://global.canon/en/index.html> ;
     schema:category <https://www.amazon.nl/-/en/gp/browse.html?node=16269066031&ref_=nav_em_el_all_electronics_0_2_9_2> ;
@@ -78,6 +70,7 @@ ns2:Tablet ns2:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16269066
 
 <https://www.amazon.nl/-/en/Huawei-P30-Lite-Peacock-Blue/dp/B07R1Y57YF/ref=sr_1_5?crid=2A7IVAE4P3JA3&keywords=huawei+phone&qid=1695820368&sprefix=huawei+ph%2Caps%2C92&sr=8-5> a ns3:product ;
     ns2:Storage <https://example.com/4_GB> ;
+    ns2:subclass ns3:MobilePhone ;
     ns1:name "Huawei P30 Lite" ;
     schema:Brand <https://www.huawei.com/en/> ;
     schema:category <https://www.amazon.nl/-/en/gp/browse.html?node=16269066031&ref_=nav_em_el_all_electronics_0_2_9_2> ;
@@ -109,6 +102,7 @@ ns2:Tablet ns2:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16269066
 
 <https://www.amazon.nl/-/en/MNJP3NF-A/dp/B0BDJFLR1F/ref=sr_1_5?crid=377I992WX3F4U&keywords=apple+watch&qid=1696411168&sprefix=appl%2Caps%2C150&sr=8-5> a ns3:product ;
     ns3:features <https://en.wikipedia.org/wiki/Global_Positioning_System> ;
+    ns2:subclass ns2:Smartwatch ;
     ns1:name "Apple Watch SE" ;
     schema:Brand <https://www.apple.com/by/> ;
     schema:category <https://www.amazon.nl/-/en/gp/browse.html?node=16269066031&ref_=nav_em_el_all_electronics_0_2_9_2> ;
@@ -127,6 +121,7 @@ ns2:Tablet ns2:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16269066
 
 <https://www.amazon.nl/-/en/Microsoft-Surface-Tablet-Silver-Refurbished/dp/B097VGFSQ8/ref=sr_1_6?crid=NHSTX64MPGB8&keywords=windows+tablet&qid=1695820327&sprefix=windows+%2Caps%2C104&sr=8-6> a ns3:product ;
     ns2:Central_processing_unit <https://www.intel.com/content/www/us/en/products/details/processors/core/i7.html> ;
+    ns2:subclass ns2:Tablet ;
     ns1:name "Microsoft Surface Pro 4 Tablet" ;
     schema:Brand <https://www.microsoft.com/nl-nl/> ;
     schema:category <https://www.amazon.nl/-/en/gp/browse.html?node=16269066031&ref_=nav_em_el_all_electronics_0_2_9_2> ;
@@ -242,6 +237,16 @@ ns2:Tablet ns2:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16269066
     schema:department <https://en.wikipedia.org/wiki/Boy> ;
     schema:price "71.99"^^xsd:float ;
     schema:valueAddedTaxIncluded <https://example.com/Included_VAT> .
+
+ns3:MobilePhone ns2:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16269066031&ref_=nav_em_el_all_electronics_0_2_9_2> .
+
+ns2:Computer ns2:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16269066031&ref_=nav_em_el_all_electronics_0_2_9_2> .
+
+ns2:Digital_camera ns2:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16269066031&ref_=nav_em_el_all_electronics_0_2_9_2> .
+
+ns2:Smartwatch ns2:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16269066031&ref_=nav_em_el_all_electronics_0_2_9_2> .
+
+ns2:Tablet ns2:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16269066031&ref_=nav_em_el_all_electronics_0_2_9_2> .
 
 <https://en.wikipedia.org/wiki/Caramel> ns2:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16242078031&ref_=nav_em_fg_groc_0_2_15_2> .
 
