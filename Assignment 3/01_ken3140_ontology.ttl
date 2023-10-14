@@ -1,0 +1,813 @@
+@prefix : <http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34/> .
+
+<http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34> rdf:type owl:Ontology ;
+                                                                            owl:imports <file:/Users/achiot/Desktop/SW/UM-Semantic-Web-2023/Assignment%203/01_ken_3140_webshop.ttl> .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#Scope
+:Scope rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#adds
+:adds rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#captures
+:captures rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#communicationType
+:communicationType rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#creates
+:creates rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#designedFor
+:designedFor rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#enhances
+:enhances rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#explorationOf
+:explorationOf rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#format
+:format rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#functionality
+:functionality rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#hasFunction
+:hasFunction rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#hasSome
+:hasSome rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#narrative
+:narrative rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#prioritize
+:prioritize rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#sensation
+:sensation rdf:type owl:ObjectProperty .
+
+
+###  https://dbpedia.org/ontology/component
+<https://dbpedia.org/ontology/component> rdf:type owl:ObjectProperty .
+
+
+###  https://dbpedia.org/page/Capability
+<https://dbpedia.org/page/Capability> rdf:type owl:ObjectProperty .
+
+
+###  https://dbpedia.org/page/Creation
+<https://dbpedia.org/page/Creation> rdf:type owl:ObjectProperty .
+
+
+###  https://dbpedia.org/page/Title
+<https://dbpedia.org/page/Title> rdfs:subPropertyOf <https://dbpedia.org/property/name> .
+
+
+###  https://dbpedia.org/property/focus
+<https://dbpedia.org/property/focus> rdf:type owl:ObjectProperty .
+
+
+###  https://en.wikipedia.org/wiki/Emphasis
+<https://en.wikipedia.org/wiki/Emphasis> rdf:type owl:ObjectProperty .
+
+
+###  https://en.wikipedia.org/wiki/Theme
+<https://en.wikipedia.org/wiki/Theme> rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/Role
+<https://schema.org/Role> rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/offers
+<https://schema.org/offers> rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/publisher
+<https://schema.org/publisher> rdfs:subPropertyOf <https://schema.org/Brand> .
+
+
+###  https://www.example.com/presence
+<https://www.example.com/presence> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#Epic
+:Epic rdf:type owl:Class ;
+      owl:equivalentClass [ owl:intersectionOf ( <https://dbpedia.org/ontology/Book>
+                                                 <https://dbpedia.org/page/subclass>
+                                                 [ rdf:type owl:Class ;
+                                                   owl:complementOf :Tragedy
+                                                 ]
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :hasSome ;
+                                                   owl:someValuesFrom :Protagonist
+                                                 ]
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty <https://www.example.com/presence> ;
+                                                   owl:someValuesFrom :tragic_flaw
+                                                 ]
+                                               ) ;
+                            rdf:type owl:Class
+                          ] ;
+      rdfs:subClassOf <https://dbpedia.org/ontology/Book> .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#Eroic
+:Eroic rdf:type owl:Class ;
+       rdfs:subClassOf :Protagonist .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#Fashion
+:Fashion rdf:type owl:Class ;
+         rdfs:subClassOf <https://schema.org/category> .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#Grand
+:Grand rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#Groceries
+:Groceries rdf:type owl:Class ;
+           rdfs:subClassOf <https://schema.org/category> .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#Image
+:Image rdf:type owl:Class ;
+       rdfs:subClassOf :Multimedia .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#MoralDilemmas
+:MoralDilemmas rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#Multimedia
+:Multimedia rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#Protagonist
+:Protagonist rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#Suspense
+:Suspense rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#Tragedy
+:Tragedy rdf:type owl:Class ;
+         owl:equivalentClass [ owl:intersectionOf ( <https://dbpedia.org/ontology/Book>
+                                                    <https://dbpedia.org/page/subclass>
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :hasSome ;
+                                                      owl:someValuesFrom :Protagonist
+                                                    ]
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty <https://www.example.com/presence> ;
+                                                      owl:someValuesFrom :tragic_flaw
+                                                    ]
+                                                  ) ;
+                               rdf:type owl:Class
+                             ] ;
+         rdfs:subClassOf <https://dbpedia.org/ontology/Book> .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#Video
+:Video rdf:type owl:Class ;
+       rdfs:subClassOf :Multimedia .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#accesories
+:accesories rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#artisticLanguage
+:artisticLanguage rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#author
+:author rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#clothing
+:clothing rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#conflict
+:conflict rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#danger
+:danger rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#darkerlook
+:darkerlook rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#definition
+:definition rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#digital
+:digital rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#education
+:education rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#entertainment
+:entertainment rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#female
+:female rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#fitnesstracker
+:fitnesstracker rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#healthtracker
+:healthtracker rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#heat
+:heat rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#inclusivity
+:inclusivity rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#lash_appereance
+:lash_appereance rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#length
+:length rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#male
+:male rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#male_Children
+:male_Children rdf:type owl:Class ;
+               rdfs:subClassOf :male .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#meter_poetry
+:meter_poetry rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#other_genders
+:other_genders rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#poetry
+:poetry rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#prose
+:prose rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#psychological_depth
+:psychological_depth rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#publisher
+:publisher rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#pungency
+:pungency rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#related_products
+:related_products rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#rythm
+:rythm rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#section
+:section rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#touch_screen
+:touch_screen rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#tragic_flaw
+:tragic_flaw rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#verse
+:verse rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#volume
+:volume rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#wide
+:wide rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34#wireless
+:wireless rdf:type owl:Class .
+
+
+###  https://dbpedia.org/ontology/Book
+<https://dbpedia.org/ontology/Book> rdf:type owl:Class ;
+                                    owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                          owl:onProperty :hasSome ;
+                                                          owl:someValuesFrom [ owl:intersectionOf ( :author
+                                                                                                    :publisher
+                                                                                                  ) ;
+                                                                               rdf:type owl:Class
+                                                                             ]
+                                                        ] ;
+                                    rdfs:subClassOf <https://schema.org/category> .
+
+
+###  https://dbpedia.org/ontology/MobilePhone
+<https://dbpedia.org/ontology/MobilePhone> rdf:type owl:Class ;
+                                           owl:equivalentClass [ owl:intersectionOf ( <https://dbpedia.org/page/subclass>
+                                                                                      <https://en.wikipedia.org/wiki/Electronics>
+                                                                                      [ rdf:type owl:Class ;
+                                                                                        owl:complementOf <https://dbpedia.org/page/Tablet>
+                                                                                      ]
+                                                                                      [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty :communicationType ;
+                                                                                        owl:someValuesFrom :wireless
+                                                                                      ]
+                                                                                      [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty :functionality ;
+                                                                                        owl:someValuesFrom :wide
+                                                                                      ]
+                                                                                      [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty :hasFunction ;
+                                                                                        owl:someValuesFrom [ owl:intersectionOf ( :education
+                                                                                                                                  :entertainment
+                                                                                                                                  <https://dbpedia.org/page/Communication>
+                                                                                                                                ) ;
+                                                                                                             rdf:type owl:Class
+                                                                                                           ]
+                                                                                      ]
+                                                                                      [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty :hasSome ;
+                                                                                        owl:someValuesFrom :touch_screen
+                                                                                      ]
+                                                                                    ) ;
+                                                                 rdf:type owl:Class
+                                                               ] .
+
+
+###  https://dbpedia.org/ontology/Software
+<https://dbpedia.org/ontology/Software> rdf:type owl:Class .
+
+
+###  https://dbpedia.org/ontology/product
+<https://dbpedia.org/ontology/product> rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <https://dbpedia.org/page/subclass> ;
+                                                         owl:someValuesFrom owl:Thing
+                                                       ] ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <https://dbpedia.org/property/name> ;
+                                                         owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                       ] ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <https://schema.org/Brand> ;
+                                                         owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                       ] .
+
+
+###  https://dbpedia.org/page/Central_processing_unit
+<https://dbpedia.org/page/Central_processing_unit> rdf:type owl:Class .
+
+
+###  https://dbpedia.org/page/Communication
+<https://dbpedia.org/page/Communication> rdf:type owl:Class .
+
+
+###  https://dbpedia.org/page/Computer
+<https://dbpedia.org/page/Computer> rdf:type owl:Class ;
+                                    owl:equivalentClass [ owl:intersectionOf ( <https://dbpedia.org/page/subclass>
+                                                                               <https://en.wikipedia.org/wiki/Electronics>
+                                                                               [ rdf:type owl:Class ;
+                                                                                 owl:complementOf <https://dbpedia.org/page/Tablet>
+                                                                               ]
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty <https://dbpedia.org/ontology/component> ;
+                                                                                 owl:someValuesFrom [ owl:intersectionOf ( <https://dbpedia.org/ontology/Software>
+                                                                                                                           <https://dbpedia.org/page/Central_processing_unit>
+                                                                                                                           <https://dbpedia.org/page/Hardware>
+                                                                                                                         ) ;
+                                                                                                      rdf:type owl:Class
+                                                                                                    ]
+                                                                               ]
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty <https://dbpedia.org/page/Capability> ;
+                                                                                 owl:someValuesFrom <https://dbpedia.org/page/Communication>
+                                                                               ]
+                                                                             ) ;
+                                                          rdf:type owl:Class
+                                                        ] ;
+                                    rdfs:subClassOf <https://dbpedia.org/page/subclass> .
+
+
+###  https://dbpedia.org/page/Computing
+<https://dbpedia.org/page/Computing> rdf:type owl:Class .
+
+
+###  https://dbpedia.org/page/Digital_camera
+<https://dbpedia.org/page/Digital_camera> rdf:type owl:Class ;
+                                          owl:equivalentClass [ owl:intersectionOf ( <https://dbpedia.org/page/subclass>
+                                                                                     <https://en.wikipedia.org/wiki/Electronics>
+                                                                                     [ rdf:type owl:Restriction ;
+                                                                                       owl:onProperty :captures ;
+                                                                                       owl:someValuesFrom :Multimedia
+                                                                                     ]
+                                                                                     [ rdf:type owl:Restriction ;
+                                                                                       owl:onProperty :format ;
+                                                                                       owl:someValuesFrom :digital
+                                                                                     ]
+                                                                                   ) ;
+                                                                rdf:type owl:Class
+                                                              ] .
+
+
+###  https://dbpedia.org/page/Hardware
+<https://dbpedia.org/page/Hardware> rdf:type owl:Class .
+
+
+###  https://dbpedia.org/page/Photography
+<https://dbpedia.org/page/Photography> rdf:type owl:Class .
+
+
+###  https://dbpedia.org/page/Smartwatch
+<https://dbpedia.org/page/Smartwatch> rdf:type owl:Class ;
+                                      owl:equivalentClass [ owl:intersectionOf ( <https://dbpedia.org/page/subclass>
+                                                                                 <https://en.wikipedia.org/wiki/Electronics>
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty :hasFunction ;
+                                                                                   owl:someValuesFrom <https://dbpedia.org/page/Wearable_technology>
+                                                                                 ]
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty <https://schema.org/offers> ;
+                                                                                   owl:someValuesFrom [ owl:intersectionOf ( :fitnesstracker
+                                                                                                                             :healthtracker
+                                                                                                                             :wireless
+                                                                                                                           ) ;
+                                                                                                        rdf:type owl:Class
+                                                                                                      ]
+                                                                                 ]
+                                                                               ) ;
+                                                            rdf:type owl:Class
+                                                          ] ;
+                                      rdfs:subClassOf <https://en.wikipedia.org/wiki/Electronics> .
+
+
+###  https://dbpedia.org/page/Tablet
+<https://dbpedia.org/page/Tablet> rdf:type owl:Class ;
+                                  owl:equivalentClass [ owl:intersectionOf ( <https://dbpedia.org/page/subclass>
+                                                                             <https://en.wikipedia.org/wiki/Electronics>
+                                                                             [ rdf:type owl:Class ;
+                                                                               owl:complementOf <https://dbpedia.org/ontology/MobilePhone>
+                                                                             ]
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty :communicationType ;
+                                                                               owl:someValuesFrom :wireless
+                                                                             ]
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty :functionality ;
+                                                                               owl:someValuesFrom :wide
+                                                                             ]
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty :hasFunction ;
+                                                                               owl:someValuesFrom [ owl:intersectionOf ( :education
+                                                                                                                         :entertainment
+                                                                                                                         <https://dbpedia.org/page/Communication>
+                                                                                                                       ) ;
+                                                                                                    rdf:type owl:Class
+                                                                                                  ]
+                                                                             ]
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty :hasSome ;
+                                                                               owl:someValuesFrom :touch_screen
+                                                                             ]
+                                                                           ) ;
+                                                        rdf:type owl:Class
+                                                      ] ;
+                                  rdfs:subClassOf <https://dbpedia.org/page/subclass> .
+
+
+###  https://dbpedia.org/page/Wearable_technology
+<https://dbpedia.org/page/Wearable_technology> rdf:type owl:Class .
+
+
+###  https://en.wikipedia.org/wiki/Beauty
+<https://en.wikipedia.org/wiki/Beauty> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://schema.org/category> .
+
+
+###  https://en.wikipedia.org/wiki/Boy
+<https://en.wikipedia.org/wiki/Boy> rdf:type owl:Class ;
+                                    owl:equivalentClass [ owl:intersectionOf ( :Fashion
+                                                                               <https://dbpedia.org/page/subclass>
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty :hasSome ;
+                                                                                 owl:someValuesFrom :section
+                                                                               ]
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty <https://schema.org/offers> ;
+                                                                                 owl:someValuesFrom [ owl:intersectionOf ( :accesories
+                                                                                                                           :clothing
+                                                                                                                           :related_products
+                                                                                                                         ) ;
+                                                                                                      rdf:type owl:Class
+                                                                                                    ]
+                                                                               ]
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty :designedFor ;
+                                                                                 owl:allValuesFrom :male_Children
+                                                                               ]
+                                                                             ) ;
+                                                          rdf:type owl:Class
+                                                        ] ;
+                                    rdfs:subClassOf :Fashion .
+
+
+###  https://en.wikipedia.org/wiki/Character_development
+<https://en.wikipedia.org/wiki/Character_development> rdf:type owl:Class .
+
+
+###  https://en.wikipedia.org/wiki/Chocolate
+<https://en.wikipedia.org/wiki/Chocolate> rdf:type owl:Class ;
+                                          owl:equivalentClass [ owl:intersectionOf ( :Groceries
+                                                                                     <https://dbpedia.org/page/subclass>
+                                                                                   ) ;
+                                                                rdf:type owl:Class
+                                                              ] ;
+                                          rdfs:subClassOf :Groceries .
+
+
+###  https://en.wikipedia.org/wiki/Electronics
+<https://en.wikipedia.org/wiki/Electronics> rdf:type owl:Class ;
+                                            rdfs:subClassOf <https://schema.org/category> .
+
+
+###  https://en.wikipedia.org/wiki/Obstacle
+<https://en.wikipedia.org/wiki/Obstacle> rdf:type owl:Class .
+
+
+###  https://en.wikipedia.org/wiki/Poetry
+<https://en.wikipedia.org/wiki/Poetry> rdf:type owl:Class ;
+                                       owl:equivalentClass [ owl:intersectionOf ( <https://dbpedia.org/ontology/Book>
+                                                                                  <https://dbpedia.org/page/subclass>
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty <https://www.example.com/presence> ;
+                                                                                    owl:someValuesFrom [ owl:intersectionOf ( :artisticLanguage
+                                                                                                                              :meter_poetry
+                                                                                                                              :rythm
+                                                                                                                              :verse
+                                                                                                                            ) ;
+                                                                                                         rdf:type owl:Class
+                                                                                                       ]
+                                                                                  ]
+                                                                                ) ;
+                                                             rdf:type owl:Class
+                                                           ] ;
+                                       rdfs:subClassOf <https://dbpedia.org/ontology/Book> .
+
+
+###  https://en.wikipedia.org/wiki/Relationship
+<https://en.wikipedia.org/wiki/Relationship> rdf:type owl:Class .
+
+
+###  https://en.wikipedia.org/wiki/Romance_novel
+<https://en.wikipedia.org/wiki/Romance_novel> rdf:type owl:Class ;
+                                              owl:equivalentClass [ owl:intersectionOf ( <https://dbpedia.org/ontology/Book>
+                                                                                         <https://dbpedia.org/page/subclass>
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <https://dbpedia.org/page/Genre> ;
+                                                                                           owl:someValuesFrom <https://en.wikipedia.org/wiki/Romantic>
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <https://dbpedia.org/property/focus> ;
+                                                                                           owl:someValuesFrom [ owl:intersectionOf ( <https://en.wikipedia.org/wiki/Relationship>
+                                                                                                                                     <https://www.example.com/Emotional_depth>
+                                                                                                                                     [ rdf:type owl:Restriction ;
+                                                                                                                                       owl:onProperty <https://www.example.com/presence> ;
+                                                                                                                                       owl:someValuesFrom <https://en.wikipedia.org/wiki/Obstacle>
+                                                                                                                                     ]
+                                                                                                                                   ) ;
+                                                                                                                rdf:type owl:Class
+                                                                                                              ]
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <https://en.wikipedia.org/wiki/Emphasis> ;
+                                                                                           owl:someValuesFrom <https://en.wikipedia.org/wiki/Character_development>
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <https://en.wikipedia.org/wiki/Theme> ;
+                                                                                           owl:someValuesFrom <https://www.example.com/Romantic_love>
+                                                                                         ]
+                                                                                       ) ;
+                                                                    rdf:type owl:Class
+                                                                  ] ;
+                                              rdfs:subClassOf <https://dbpedia.org/ontology/Book> .
+
+
+###  https://en.wikipedia.org/wiki/Romantic
+<https://en.wikipedia.org/wiki/Romantic> rdf:type owl:Class .
+
+
+###  https://en.wikipedia.org/wiki/Unisex
+<https://en.wikipedia.org/wiki/Unisex> rdf:type owl:Class ;
+                                       owl:equivalentClass [ owl:intersectionOf ( :Fashion
+                                                                                  <https://dbpedia.org/page/subclass>
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty :designedFor ;
+                                                                                    owl:someValuesFrom [ owl:intersectionOf ( :female
+                                                                                                                              :male
+                                                                                                                              :other_genders
+                                                                                                                            ) ;
+                                                                                                         rdf:type owl:Class
+                                                                                                       ]
+                                                                                  ]
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty :prioritize ;
+                                                                                    owl:someValuesFrom :inclusivity
+                                                                                  ]
+                                                                                ) ;
+                                                             rdf:type owl:Class
+                                                           ] ;
+                                       rdfs:subClassOf :Fashion .
+
+
+###  https://en.wikipedia.org/wiki/Women
+<https://en.wikipedia.org/wiki/Women> rdf:type owl:Class ;
+                                      owl:equivalentClass [ owl:intersectionOf ( :Fashion
+                                                                                 <https://dbpedia.org/page/subclass>
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty :hasSome ;
+                                                                                   owl:someValuesFrom :section
+                                                                                 ]
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty <https://schema.org/offers> ;
+                                                                                   owl:someValuesFrom [ owl:intersectionOf ( :accesories
+                                                                                                                             :clothing
+                                                                                                                             :related_products
+                                                                                                                           ) ;
+                                                                                                        rdf:type owl:Class
+                                                                                                      ]
+                                                                                 ]
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty :designedFor ;
+                                                                                   owl:allValuesFrom :female
+                                                                                 ]
+                                                                               ) ;
+                                                            rdf:type owl:Class
+                                                          ] ;
+                                      rdfs:subClassOf :Fashion .
+
+
+###  https://en.wikipedia.org/wiki/Thriller_(genre)
+<https://en.wikipedia.org/wiki/Thriller_(genre)> rdf:type owl:Class ;
+                                                 owl:equivalentClass [ owl:intersectionOf ( <https://dbpedia.org/ontology/Book>
+                                                                                            <https://dbpedia.org/page/subclass>
+                                                                                            [ rdf:type owl:Restriction ;
+                                                                                              owl:onProperty :explorationOf ;
+                                                                                              owl:someValuesFrom [ owl:intersectionOf ( :MoralDilemmas
+                                                                                                                                        :psychological_depth
+                                                                                                                                      ) ;
+                                                                                                                   rdf:type owl:Class
+                                                                                                                 ]
+                                                                                            ]
+                                                                                            [ rdf:type owl:Restriction ;
+                                                                                              owl:onProperty <https://dbpedia.org/page/Creation> ;
+                                                                                              owl:someValuesFrom :Suspense
+                                                                                            ]
+                                                                                            [ rdf:type owl:Restriction ;
+                                                                                              owl:onProperty <https://www.example.com/presence> ;
+                                                                                              owl:someValuesFrom [ owl:intersectionOf ( :conflict
+                                                                                                                                        :danger
+                                                                                                                                      ) ;
+                                                                                                                   rdf:type owl:Class
+                                                                                                                 ]
+                                                                                            ]
+                                                                                          ) ;
+                                                                       rdf:type owl:Class
+                                                                     ] ;
+                                                 rdfs:subClassOf <https://dbpedia.org/ontology/Book> .
+
+
+###  https://en.wiktionary.org/wiki/spicy
+<https://en.wiktionary.org/wiki/spicy> rdf:type owl:Class ;
+                                       owl:equivalentClass [ owl:intersectionOf ( :Groceries
+                                                                                  <https://dbpedia.org/page/subclass>
+                                                                                  [ rdf:type owl:Class ;
+                                                                                    owl:unionOf ( :pungency
+                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty :sensation ;
+                                                                                                    owl:someValuesFrom :heat
+                                                                                                  ]
+                                                                                                )
+                                                                                  ]
+                                                                                ) ;
+                                                             rdf:type owl:Class
+                                                           ] ;
+                                       rdfs:subClassOf :Groceries .
+
+
+###  https://schema.org/Brand
+<https://schema.org/Brand> rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                             owl:onProperty <https://schema.org/offers> ;
+                                             owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                             owl:onClass <https://dbpedia.org/ontology/product>
+                                           ] .
+
+
+###  https://schema.org/category
+<https://schema.org/category> rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                owl:onProperty <https://dbpedia.org/page/subclass> ;
+                                                owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                              ] .
+
+
+###  https://www.example.com/Emotional_depth
+<https://www.example.com/Emotional_depth> rdf:type owl:Class .
+
+
+###  https://www.example.com/Romantic_love
+<https://www.example.com/Romantic_love> rdf:type owl:Class .
+
+
+###  https://www.example.com/liquid_mascara
+<https://www.example.com/liquid_mascara> rdf:type owl:Class ;
+                                         owl:equivalentClass [ owl:intersectionOf ( <https://dbpedia.org/page/subclass>
+                                                                                    <https://en.wikipedia.org/wiki/Beauty>
+                                                                                    [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty :adds ;
+                                                                                      owl:someValuesFrom [ owl:intersectionOf ( :definition
+                                                                                                                                :length
+                                                                                                                                :volume
+                                                                                                                              ) ;
+                                                                                                           rdf:type owl:Class
+                                                                                                         ]
+                                                                                    ]
+                                                                                    [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty :creates ;
+                                                                                      owl:someValuesFrom :darkerlook
+                                                                                    ]
+                                                                                    [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty :enhances ;
+                                                                                      owl:someValuesFrom :lash_appereance
+                                                                                    ]
+                                                                                  ) ;
+                                                               rdf:type owl:Class
+                                                             ] .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<https://barcel-usa.com/> <https://dbpedia.org/property/name> "Barcel" .
+
+
+###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi

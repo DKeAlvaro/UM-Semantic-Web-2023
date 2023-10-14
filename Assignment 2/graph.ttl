@@ -2,6 +2,7 @@
 @prefix ns2: <https://dbpedia.org/property/> .
 @prefix ns3: <https://dbpedia.org/ontology/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -43,8 +44,6 @@ ns2:form a owl:ObjectProperty .
 
 ns2:name a owl:ObjectProperty .
 
-schema:Brand a owl:ObjectProperty .
-
 schema:Rating a owl:ObjectProperty .
 
 schema:Season a owl:ObjectProperty .
@@ -59,15 +58,84 @@ schema:department a owl:ObjectProperty .
 
 schema:material a owl:ObjectProperty .
 
+schema:offers a owl:ObjectProperty .
+
 schema:operatingSystem a owl:ObjectProperty .
 
 schema:price a owl:ObjectProperty .
 
-schema:publisher a owl:ObjectProperty .
-
 schema:size a owl:ObjectProperty .
 
 schema:valueAddedTaxIncluded a owl:ObjectProperty .
+
+<https://barcel-usa.com/> a schema:Brand ;
+    schema:offers <https://www.amazon.nl/-/en/Takis-Fuego-Chili-Lime-Chips/dp/B0CGMHK81D/ref=sr_1_5?crid=14YJSVM1R867Q&keywords=takis&qid=1695820278&sprefix=takis%2Caps%2C91&sr=8-5> .
+
+<https://colacao.es/> a schema:Brand ;
+    schema:offers <https://www.amazon.nl/-/en/Original-solvent-natural-without-additives/dp/B003XUIK8I/ref=d_pd_day0_sccl_2_2/260-9348700-5252427?pd_rd_w=KporV&content-id=amzn1.sym.9094c00a-56f9-4c44-8d45-d66ba2966f61&pf_rd_p=9094c00a-56f9-4c44-8d45-d66ba2966f61&pf_rd_r=HWKWF1N7BRQKGKQDYWS9&pd_rd_wg=V26oS&pd_rd_r=b5561f54-d53e-40a3-9906-3030dd56cc5c&pd_rd_i=B003XUIK8I&psc=1> .
+
+ns3:MobilePhone a ns1:subclass ;
+    ns1:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16269066031&ref_=nav_em_el_all_electronics_0_2_9_2> .
+
+ns1:Computer a ns1:subclass ;
+    ns1:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16269066031&ref_=nav_em_el_all_electronics_0_2_9_2> .
+
+ns1:Digital_camera a ns1:subclass ;
+    ns1:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16269066031&ref_=nav_em_el_all_electronics_0_2_9_2> .
+
+ns1:Smartwatch a ns1:subclass ;
+    ns1:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16269066031&ref_=nav_em_el_all_electronics_0_2_9_2> .
+
+ns1:Tablet a ns1:subclass ;
+    ns1:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16269066031&ref_=nav_em_el_all_electronics_0_2_9_2> .
+
+<https://en.wikipedia.org/wiki/Caramel> a ns1:subclass ;
+    ns1:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16242078031&ref_=nav_em_fg_groc_0_2_15_2> .
+
+<https://en.wikipedia.org/wiki/Epic_(genre)> a ns1:subclass ;
+    ns1:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16241779031&ref_=nav_em_bo_all_0_2_7_2> .
+
+<https://en.wikipedia.org/wiki/Hazelnut> a ns1:subclass ;
+    ns1:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16242078031&ref_=nav_em_fg_groc_0_2_15_2> .
+
+<https://en.wikipedia.org/wiki/Lip_gloss> a ns1:subclass ;
+    ns1:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16241721031&ref_=nav_em_hb_beauty_0_2_16_2> .
+
+<https://en.wikipedia.org/wiki/Poetry> a ns1:subclass ;
+    ns1:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16241779031&ref_=nav_em_bo_all_0_2_7_2> .
+
+<https://en.wikipedia.org/wiki/Romance_novel> a ns1:subclass ;
+    ns1:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16241779031&ref_=nav_em_bo_all_0_2_7_2> .
+
+<https://en.wikipedia.org/wiki/Thriller_(genre)> a ns1:subclass ;
+    ns1:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16241779031&ref_=nav_em_bo_all_0_2_7_2> .
+
+<https://en.wikipedia.org/wiki/Tragedy> a ns1:subclass ;
+    ns1:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16241779031&ref_=nav_em_bo_all_0_2_7_2> .
+
+<https://en.wikipedia.org/wiki/Transworld_(publisher)> a schema:publisher ;
+    schema:offers <https://www.amazon.nl/-/en/Sarah-Pearse-ebook/dp/B08X4Q31LR/ref=sr_1_1?crid=ADEE4225GMED&keywords=the+retreat&qid=1695820612&sprefix=the+retreat%2Caps%2C88&sr=8-1> .
+
+<https://en.wikipedia.org/wiki/Unisex> a ns1:subclass ;
+    ns1:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16241836031&ref_=nav_em__cog_0_2_13_2> .
+
+<https://en.wiktionary.org/wiki/bronzer> a ns1:subclass ;
+    ns1:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16241721031&ref_=nav_em_hb_beauty_0_2_16_2> .
+
+<https://en.wiktionary.org/wiki/spicy> a ns1:subclass ;
+    ns1:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16242078031&ref_=nav_em_fg_groc_0_2_15_2> .
+
+<https://global.canon/en/index.html> a schema:Brand ;
+    schema:offers <https://www.amazon.nl/-/en/Canon-Camera-F3-5-5-6-Screen-Sensor/dp/B07BMV268V/ref=sr_1_5?crid=2FDQIB4UHD3US&keywords=canon+camera&qid=1695820401&sprefix=canon+%2Caps%2C100&sr=8-5> .
+
+<https://nl.newbalance.eu/nl> a schema:Brand ;
+    schema:offers <https://www.amazon.nl/-/en/Balance-White-Beige-Style-Code/dp/B0C9JFWYFN/ref=sr_1_2?crid=2WVLPNA3J1UGB&keywords=new+balance+550+dames&qid=1695891276&sprefix=new%2Bbalance%2B550%2Caps%2C60&sr=8-2> .
+
+<https://nl.tommy.com/EN> a schema:Brand ;
+    schema:offers <https://www.amazon.nl/-/en/Tommy-Hilfiger-T-Shirt-Allure-Heather/dp/B07DXB5VMV/ref=zg_bs_c_fashion_sccl_1/257-6316699-9736546?pd_rd_w=BFCe6&content-id=amzn1.sym.6d0b5bcd-e90f-45da-a5c5-c8a801ccda1a&pf_rd_p=6d0b5bcd-e90f-45da-a5c5-c8a801ccda1a&pf_rd_r=6G90AXJX557JBN0K4T46&pd_rd_wg=4eW54&pd_rd_r=0ae55144-f128-4957-9ba0-67b84c1fff3c&pd_rd_i=B07DX7BF7G&th=1&psc=1> .
+
+<https://us.macmillan.com/> a schema:publisher ;
+    schema:offers <https://www.amazon.nl/-/en/William-Shakespeare/dp/1909621889/ref=sr_1_4?crid=1IWNJWOT0H078&keywords=macmillan&qid=1695820793&sprefix=macmillan+%2Caps%2C72&sr=8-4> .
 
 <https://www.amazon.nl/-/en/Apple-2022-MacBook-Air-chip/dp/B0B3CQW13T/ref=sr_1_1_sspa?crid=25CUOIOQQGM1&keywords=macbook+air+m2&qid=1695817653&sprefix=macb%2Caps%2C101&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1> a ns3:product ;
     ns1:Central_processing_unit <https://en.wikipedia.org/wiki/Apple_M2> ;
@@ -78,22 +146,6 @@ schema:valueAddedTaxIncluded a owl:ObjectProperty .
     schema:category <https://www.amazon.nl/-/en/gp/browse.html?node=16269066031&ref_=nav_em_el_all_electronics_0_2_9_2> ;
     schema:operatingSystem <https://apps.apple.com/us/app/macos-mojave/id1398502828?mt=12> ;
     schema:price "1359.0"^^xsd:float .
-
-<https://www.amazon.nl/-/en/Balance-White-Beige-Style-Code/dp/B0C9JFWYFN/ref=sr_1_2?crid=2WVLPNA3J1UGB&keywords=new+balance+550+dames&qid=1695891276&sprefix=new%2Bbalance%2B550%2Caps%2C60&sr=8-2> a ns3:product ;
-    ns3:colourName "Happy" ;
-    ns1:Cosmetics <https://www.example.com/Liquid_Blush> ;
-    ns2:name "Rare beauty blush",
-        "Reebok uniseks-volwassene Club CSneaker" ;
-    schema:Brand <https://nl.newbalance.eu/nl>,
-        <https://www.rarebeauty.com/> ;
-    schema:Rating "38"^^xsd:float ;
-    schema:category <https://www.amazon.nl/-/en/gp/browse.html?node=16241721031&ref_=nav_em_hb_beauty_0_2_16_2>,
-        <https://www.amazon.nl/-/en/gp/browse.html?node=16241836031&ref_=nav_em__cog_0_2_13_2> ;
-    schema:color <https://en.wikipedia.org/wiki/White> ;
-    schema:countryOfOrigin <https://en.wikipedia.org/wiki/Italy> ;
-    schema:department <https://en.wikipedia.org/wiki/Women> ;
-    schema:price "45.0"^^xsd:float,
-        "170.0"^^xsd:float .
 
 <https://www.amazon.nl/-/en/Canon-Camera-F3-5-5-6-Screen-Sensor/dp/B07BMV268V/ref=sr_1_5?crid=2FDQIB4UHD3US&keywords=canon+camera&qid=1695820401&sprefix=canon+%2Caps%2C100&sr=8-5> a ns3:product ;
     ns1:Exposure <https://www.canon.com.au/get-inspired/glossary/manual-exposure#:~:text=Manual%20Exposure%20is%20when%20the,the%20output%20of%20the%20image.> ;
@@ -144,7 +196,14 @@ schema:valueAddedTaxIncluded a owl:ObjectProperty .
     schema:price "199.0"^^xsd:float .
 
 <https://www.amazon.nl/-/en/John-Ronald-Reuel-Tolkien/dp/0261103288/ref=sr_1_3?crid=1WBRN8CNAN38C&keywords=harper+collins&qid=1695820740&sprefix=harper+co%2Caps%2C85&sr=8-3> a ns3:product ;
-    schema:category <https://www.amazon.nl/-/en/gp/browse.html?node=16241779031&ref_=nav_em_bo_all_0_2_7_2> .
+    ns1:Book_type <https://en.wikipedia.org/wiki/Hardcover> ;
+    ns1:Genre <https://en.wikipedia.org/wiki/Epic_(genre)> ;
+    ns1:Language <https://en.wikipedia.org/wiki/English_language> ;
+    ns1:Title "The Hobbit" ;
+    schema:author <https://en.wikipedia.org/wiki/J._R._R._Tolkien> ;
+    schema:category <https://www.amazon.nl/-/en/gp/browse.html?node=16241779031&ref_=nav_em_bo_all_0_2_7_2> ;
+    schema:price "17.94"^^xsd:float ;
+    schema:publisher <https://www.harpercollins.com/> .
 
 <https://www.amazon.nl/-/en/KINDER-BUENO-stangen-doos-stuks/dp/B06XQN4NQ6/ref=sr_1_1?__mk_nl_NL=ÅMÅŽÕÑ&crid=3CRDQ21UMSX51&keywords=kinder+bueno&qid=1695818828&sprefix=kinder+bueno%2Caps%2C171&sr=8-1> a ns3:product ;
     ns3:creator <https://es.wikipedia.org/wiki/Michele_Ferrero> ;
@@ -203,7 +262,8 @@ schema:valueAddedTaxIncluded a owl:ObjectProperty .
     schema:countryOfOrigin <https://en.wikipedia.org/wiki/Argentina> ;
     schema:price "16.23"^^xsd:float .
 
-<https://www.amazon.nl/-/en/PROFESSIONAL-MAKEUP-800897182342-Multitasking-Set-Refresh-Multitasking/dp/B07SB2LG6S/ref=sr_1_1?crid=1Y5KPRGTISEJP&keywords=nyx+setting+spray&qid=1696410169&sprefix=nyx+setting+%2Caps%2C70&sr=8-1> a ns3:product ;
+<https://www.amazon.nl/-/en/PROFESSIONAL-MAKEUP-800897182342-Multitasking-Set-Refresh-Multitasking/dp/B07SB2LG6S/ref=sr_1_1?crid=1Y5KPRGTISEJP&keywords=nyx+setting+spray&qid=1696410169&sprefix=nyx+setting+%2Caps%2C70&sr=8-1> a ns3:product,
+        ns1:subclass ;
     ns1:Cosmetics <https://www.example.com/Setting_Spray> ;
     ns2:finish <https://www.example.com/Radiant> ;
     ns2:form <https://en.wikipedia.org/wiki/Aerosol_spray_dispenser> ;
@@ -224,18 +284,13 @@ schema:valueAddedTaxIncluded a owl:ObjectProperty .
 
 <https://www.amazon.nl/-/en/Rainer-Maria-Rilke/dp/0241620031/ref=sr_1_2?crid=E1G65XJOEFPF&keywords=letters+to+a+young+poet&qid=1695820671&sprefix=letters+to+a+%2Caps%2C89&sr=8-2> a ns3:product ;
     ns1:Book_type <https://en.wikipedia.org/wiki/Hardcover> ;
-    ns1:Genre <https://en.wikipedia.org/wiki/Epic_(genre)>,
-        <https://en.wikipedia.org/wiki/Poetry> ;
+    ns1:Genre <https://en.wikipedia.org/wiki/Poetry> ;
     ns1:Language <https://en.wikipedia.org/wiki/English_language> ;
-    ns1:Title "Letters to a Young Poet",
-        "The Hobbit" ;
-    schema:author <https://en.wikipedia.org/wiki/J._R._R._Tolkien>,
-        <https://nl.wikipedia.org/wiki/Rainer_Maria_Rilke> ;
+    ns1:Title "Letters to a Young Poet" ;
+    schema:author <https://nl.wikipedia.org/wiki/Rainer_Maria_Rilke> ;
     schema:category <https://www.amazon.nl/-/en/gp/browse.html?node=16241779031&ref_=nav_em_bo_all_0_2_7_2> ;
-    schema:price "9.7"^^xsd:float,
-        "17.94"^^xsd:float ;
-    schema:publisher <https://www.harpercollins.com/>,
-        <https://www.penguin.co.uk/> .
+    schema:price "9.7"^^xsd:float ;
+    schema:publisher <https://www.penguin.co.uk/> .
 
 <https://www.amazon.nl/-/en/Rimmel-London-Natural-Bronzing-Bronzer/dp/B08ZPFFBGD/ref=sr_1_20?crid=MQMMI8VKZMFW&keywords=makeup&qid=1695820165&sprefix=makeup%2Caps%2C95&sr=8-20&th=1> a ns3:product ;
     ns3:colourName "002 Bronze" ;
@@ -303,47 +358,84 @@ schema:valueAddedTaxIncluded a owl:ObjectProperty .
     schema:price "71.99"^^xsd:float ;
     schema:valueAddedTaxIncluded <https://example.com/Included_VAT> .
 
-ns3:MobilePhone ns1:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16269066031&ref_=nav_em_el_all_electronics_0_2_9_2> .
-
-ns1:Computer ns1:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16269066031&ref_=nav_em_el_all_electronics_0_2_9_2> .
-
-ns1:Digital_camera ns1:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16269066031&ref_=nav_em_el_all_electronics_0_2_9_2> .
-
-ns1:Smartwatch ns1:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16269066031&ref_=nav_em_el_all_electronics_0_2_9_2> .
-
-ns1:Tablet ns1:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16269066031&ref_=nav_em_el_all_electronics_0_2_9_2> .
-
-<https://en.wikipedia.org/wiki/Caramel> ns1:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16242078031&ref_=nav_em_fg_groc_0_2_15_2> .
-
-<https://en.wikipedia.org/wiki/Epic_(genre)> ns1:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16241779031&ref_=nav_em_bo_all_0_2_7_2> .
-
-<https://en.wikipedia.org/wiki/Hazelnut> ns1:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16242078031&ref_=nav_em_fg_groc_0_2_15_2> .
-
-<https://en.wikipedia.org/wiki/Lip_gloss> ns1:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16241721031&ref_=nav_em_hb_beauty_0_2_16_2> .
-
-<https://en.wikipedia.org/wiki/Poetry> ns1:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16241779031&ref_=nav_em_bo_all_0_2_7_2> .
-
-<https://en.wikipedia.org/wiki/Romance_novel> ns1:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16241779031&ref_=nav_em_bo_all_0_2_7_2> .
-
-<https://en.wikipedia.org/wiki/Thriller_(genre)> ns1:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16241779031&ref_=nav_em_bo_all_0_2_7_2> .
-
-<https://en.wikipedia.org/wiki/Tragedy> ns1:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16241779031&ref_=nav_em_bo_all_0_2_7_2> .
-
-<https://en.wikipedia.org/wiki/Unisex> ns1:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16241836031&ref_=nav_em__cog_0_2_13_2> .
-
-<https://en.wiktionary.org/wiki/bronzer> ns1:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16241721031&ref_=nav_em_hb_beauty_0_2_16_2> .
-
-<https://en.wiktionary.org/wiki/spicy> ns1:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16242078031&ref_=nav_em_fg_groc_0_2_15_2> .
-
 <https://www.example.com/Setting_Spray> ns1:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16241721031&ref_=nav_em_hb_beauty_0_2_16_2> .
 
-<https://en.wikipedia.org/wiki/Boy> ns1:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16241836031&ref_=nav_em__cog_0_2_13_2> .
+<https://www.ferrerorocher.com/es/es/> a schema:Brand ;
+    schema:offers <https://www.amazon.nl/-/en/Ferrero-Rocher-Gift-Box-300g/dp/B004XAKAYE/ref=sr_1_2?crid=3LIYCLAZXWB6T&keywords=ferrero+rocher&qid=1695817615&sprefix=ferrer%2Caps%2C104&sr=8-2> .
 
-<https://en.wikipedia.org/wiki/Chocolate> ns1:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16242078031&ref_=nav_em_fg_groc_0_2_15_2> .
+<https://www.harpercollins.com/> a schema:publisher ;
+    schema:offers <https://www.amazon.nl/-/en/John-Ronald-Reuel-Tolkien/dp/0261103288/ref=sr_1_3?crid=1WBRN8CNAN38C&keywords=harper+collins&qid=1695820740&sprefix=harper+co%2Caps%2C85&sr=8-3> .
 
-<https://en.wikipedia.org/wiki/Women> ns1:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16241836031&ref_=nav_em__cog_0_2_13_2> .
+<https://www.havanna.com.ar/> a schema:Brand ;
+    schema:offers <https://www.amazon.nl/-/en/Havanna-Dulce-Leche-250/dp/B00H8QZKOK/ref=sr_1_2?crid=1J46OTVE2MZ3P&keywords=dulce+de+leche&qid=1695820234&sprefix=dulce+de+%2Caps%2C87&sr=8-2> .
 
-<https://www.example.com/Liquid_Blush> ns1:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16241721031&ref_=nav_em_hb_beauty_0_2_16_2> .
+<https://www.huawei.com/en/> a schema:Brand ;
+    schema:offers <https://www.amazon.nl/-/en/Huawei-P30-Lite-Peacock-Blue/dp/B07R1Y57YF/ref=sr_1_5?crid=2A7IVAE4P3JA3&keywords=huawei+phone&qid=1695820368&sprefix=huawei+ph%2Caps%2C92&sr=8-5> .
+
+<https://www.kinder.com/nl/nl/kinder-bueno> a schema:Brand ;
+    schema:offers <https://www.amazon.nl/-/en/KINDER-BUENO-stangen-doos-stuks/dp/B06XQN4NQ6/ref=sr_1_1?__mk_nl_NL=ÅMÅŽÕÑ&crid=3CRDQ21UMSX51&keywords=kinder+bueno&qid=1695818828&sprefix=kinder+bueno%2Caps%2C171&sr=8-1> .
+
+<https://www.maybelline.nl/> a schema:Brand ;
+    schema:offers <https://www.amazon.nl/-/en/Maybelline-New-York-Sensational-Mascara/dp/B00PFCSXD4/ref=sr_1_5?crid=MQMMI8VKZMFW&keywords=makeup&qid=1695820106&sprefix=makeup%2Caps%2C95&sr=8-5&th=1> .
+
+<https://www.microsoft.com/nl-nl/> a schema:Brand ;
+    schema:offers <https://www.amazon.nl/-/en/Microsoft-Surface-Tablet-Silver-Refurbished/dp/B097VGFSQ8/ref=sr_1_6?crid=NHSTX64MPGB8&keywords=windows+tablet&qid=1695820327&sprefix=windows+%2Caps%2C104&sr=8-6> .
+
+<https://www.penguin.co.uk/> a schema:publisher ;
+    schema:offers <https://www.amazon.nl/-/en/Rainer-Maria-Rilke/dp/0241620031/ref=sr_1_2?crid=E1G65XJOEFPF&keywords=letters+to+a+young+poet&qid=1695820671&sprefix=letters+to+a+%2Caps%2C89&sr=8-2> .
+
+<https://www.rarebeauty.com/> a schema:Brand ;
+    schema:offers <https://www.amazon.nl/-/en/Balance-White-Beige-Style-Code/dp/B0C9JFWYFN/ref=sr_1_2?crid=2WVLPNA3J1UGB&keywords=new+balance+550+dames&qid=1695891276&sprefix=new%2Bbalance%2B550%2Caps%2C60&sr=8-2> .
+
+<https://www.simonandschuster.com/> a schema:publisher ;
+    schema:offers <https://www.amazon.nl/-/en/Colleen-Hoover/dp/9020550411/ref=sr_1_1_sspa?crid=1JXW0JZ7V63ET&keywords=it+ends+with+us&qid=1695817510&sprefix=it+end%2Caps%2C79&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1> .
+
+<https://en.wikipedia.org/wiki/Boy> a ns1:subclass ;
+    ns1:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16241836031&ref_=nav_em__cog_0_2_13_2> .
+
+<https://en.wikipedia.org/wiki/Chocolate> a ns1:subclass ;
+    ns1:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16242078031&ref_=nav_em_fg_groc_0_2_15_2> .
+
+<https://en.wikipedia.org/wiki/Women> a ns1:subclass ;
+    ns1:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16241836031&ref_=nav_em__cog_0_2_13_2> .
+
+<https://www.adidas.nl/> a schema:Brand ;
+    schema:offers <https://www.amazon.nl/-/en/adidas-Adilette-Girls-Trainers-Black/dp/B07F71DBGG/ref=sr_1_5?crid=39AHYB3Z6H6C2&keywords=adidas+slippers&qid=1696410897&sprefix=adidas%2Caps%2C110&sr=8-5>,
+        <https://www.amazon.nl/-/en/adidas-Samba-Running-Shoes-Runwht/dp/B000KKMMG0/ref=sr_1_2?crid=2VWBC08R8NT51&keywords=adidas+samba&qid=1695890725&sprefix=adidas+%2Caps%2C78&sr=8-2> .
+
+<https://www.amazon.com.be/s?k=MARIKOO&language=en&ref=bl_sl_s_ap_web_0> a schema:Brand ;
+    schema:offers <https://www.amazon.nl/-/en/MARIKOO-Nanakoo-Womens-Winter-Jacket/dp/B07T3CXCDY?ref_=Oct_d_orecs_d_16391718031_0&pd_rd_w=O8JBG&content-id=amzn1.sym.c20ce805-8b57-413f-bf28-f3b17a0c04b1&pf_rd_p=c20ce805-8b57-413f-bf28-f3b17a0c04b1&pf_rd_r=018WGWVHNE6E053JFGT1&pd_rd_wg=TDDIQ&pd_rd_r=45146da3-c2e0-4045-947f-38d623f7adfc&pd_rd_i=B07T3CXCDY>,
+        <https://www.amazon.nl/-/en/Rimmel-London-Natural-Bronzing-Bronzer/dp/B08ZPFFBGD/ref=sr_1_20?crid=MQMMI8VKZMFW&keywords=makeup&qid=1695820165&sprefix=makeup%2Caps%2C95&sr=8-20&th=1> .
+
+<https://www.amazon.nl/-/en/Balance-White-Beige-Style-Code/dp/B0C9JFWYFN/ref=sr_1_2?crid=2WVLPNA3J1UGB&keywords=new+balance+550+dames&qid=1695891276&sprefix=new%2Bbalance%2B550%2Caps%2C60&sr=8-2> a ns3:product ;
+    ns3:colourName "Happy" ;
+    ns1:Cosmetics <https://www.example.com/Liquid_Blush> ;
+    ns2:name "Rare beauty blush",
+        "Reebok uniseks-volwassene Club CSneaker" ;
+    schema:Brand <https://nl.newbalance.eu/nl>,
+        <https://www.rarebeauty.com/> ;
+    schema:Rating "38"^^xsd:float ;
+    schema:category <https://www.amazon.nl/-/en/gp/browse.html?node=16241721031&ref_=nav_em_hb_beauty_0_2_16_2>,
+        <https://www.amazon.nl/-/en/gp/browse.html?node=16241836031&ref_=nav_em__cog_0_2_13_2> ;
+    schema:color <https://en.wikipedia.org/wiki/White> ;
+    schema:countryOfOrigin <https://en.wikipedia.org/wiki/Italy> ;
+    schema:department <https://en.wikipedia.org/wiki/Women> ;
+    schema:price "45.0"^^xsd:float,
+        "170.0"^^xsd:float .
+
+<https://www.apple.com/by/> a schema:Brand ;
+    schema:offers <https://www.amazon.nl/-/en/Apple-2022-MacBook-Air-chip/dp/B0B3CQW13T/ref=sr_1_1_sspa?crid=25CUOIOQQGM1&keywords=macbook+air+m2&qid=1695817653&sprefix=macb%2Caps%2C101&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1>,
+        <https://www.amazon.nl/-/en/MNJP3NF-A/dp/B0BDJFLR1F/ref=sr_1_5?crid=377I992WX3F4U&keywords=apple+watch&qid=1696411168&sprefix=appl%2Caps%2C150&sr=8-5> .
+
+<https://www.example.com/Liquid_Blush> a ns1:subclass ;
+    ns1:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16241721031&ref_=nav_em_hb_beauty_0_2_16_2> .
+
+<https://www.nyxcosmetics.com/> a schema:Brand ;
+    schema:offers <https://www.amazon.nl/-/en/PROFESSIONAL-MAKEUP-800897182342-Multitasking-Set-Refresh-Multitasking/dp/B07SB2LG6S/ref=sr_1_1?crid=1Y5KPRGTISEJP&keywords=nyx+setting+spray&qid=1696410169&sprefix=nyx+setting+%2Caps%2C70&sr=8-1>,
+        <https://www.amazon.nl/-/en/Professional-Lipstick-pigmented-long-lasting-formula/dp/B07BR2MP4B/ref=sr_1_14?crid=MQMMI8VKZMFW&keywords=makeup&qid=1695820165&sprefix=makeup%2Caps%2C95&sr=8-14> .
+
+schema:publisher a owl:ObjectProperty ;
+    rdfs:subClassOf schema:Brand .
 
 <https://www.amazon.nl/-/en/gp/browse.html?node=16241836031&ref_=nav_em__cog_0_2_13_2> a schema:category .
 
@@ -354,4 +446,9 @@ ns1:Tablet ns1:subclass <https://www.amazon.nl/-/en/gp/browse.html?node=16269066
 <https://www.amazon.nl/-/en/gp/browse.html?node=16241779031&ref_=nav_em_bo_all_0_2_7_2> a schema:category .
 
 <https://www.amazon.nl/-/en/gp/browse.html?node=16269066031&ref_=nav_em_el_all_electronics_0_2_9_2> a schema:category .
+
+schema:Brand a owl:ObjectProperty .
+
+ns1:subclass a owl:ObjectProperty ;
+    rdfs:subClassOf schema:category .
 
