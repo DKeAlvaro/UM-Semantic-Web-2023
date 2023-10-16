@@ -1,0 +1,548 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11/"
+     xml:base="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:page="https://dbpedia.org/page/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:schema="https://schema.org/"
+     xmlns:property="https://dbpedia.org/property/"
+     xmlns:untitled-ontology-11="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11">
+        <owl:imports rdf:resource="http://www.semanticweb.org/achiot/ontologies/2023/9/untitled-ontology-34"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#author -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#author"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#department -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#department"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#genre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#genre"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#hasColor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#hasColor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#label -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#label"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#language -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#language"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#material -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#material"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#price -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#price"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#product -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#product"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#title -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Adidas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Adidas"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Adidas_Adilette_Aqua -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Adidas_Adilette_Aqua"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Apple -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Apple"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Apple_Watch_SE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Apple_Watch_SE"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Black -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Black"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Blue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Blue"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Boys -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Boys"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Camera -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Camera">
+        <untitled-ontology-11:hasColor rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Black"/>
+        <untitled-ontology-11:label rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Canon_EOS_2000D"/>
+        <untitled-ontology-11:product rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Canon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Canon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Canon"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Canon_EOS_2000D -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Canon_EOS_2000D"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Coat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Coat">
+        <untitled-ontology-11:hasColor rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Black"/>
+        <untitled-ontology-11:label rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#MARIKOO_Coat"/>
+        <untitled-ontology-11:material rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Wool"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Colleen_Hoover -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Colleen_Hoover"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Cotton -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Cotton"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#English -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#English"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Huawei -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Huawei"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Huawei_P30_Lite -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Huawei_P30_Lite"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#It_Ends_With_Us -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#It_Ends_With_Us"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#J_R_R_Tolkien -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#J_R_R_Tolkien"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Laptop -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Laptop">
+        <untitled-ontology-11:hasColor rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Silver"/>
+        <untitled-ontology-11:label rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#MacBook"/>
+        <untitled-ontology-11:product rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Apple"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Letters_to_a_Young_Poet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Letters_to_a_Young_Poet"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#MARIKOO_Coat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#MARIKOO_Coat"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#MacBeth -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#MacBeth"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#MacBook -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#MacBook"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#MacMillan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#MacMillan"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Maria_Rilke -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Maria_Rilke"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#McB -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#McB">
+        <untitled-ontology-11:author rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#William_Shakespear"/>
+        <untitled-ontology-11:genre rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Tragedy"/>
+        <untitled-ontology-11:language rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#English"/>
+        <untitled-ontology-11:product rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#MacMillan"/>
+        <untitled-ontology-11:title rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#MacBeth"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Microsoft -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Microsoft"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Microsoft_Surface_Pro_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Microsoft_Surface_Pro_4"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#New_Balance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#New_Balance"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Penguin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Penguin"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Phone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Phone">
+        <untitled-ontology-11:hasColor rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Blue"/>
+        <untitled-ontology-11:label rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Huawei_P30_Lite"/>
+        <untitled-ontology-11:product rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Huawei"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Poetry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Poetry"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Red -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Red"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Reebok_uniseks-volwassene_Club_CSneaker -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Reebok_uniseks-volwassene_Club_CSneaker"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Romance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Romance"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Running_SHoes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Running_SHoes">
+        <untitled-ontology-11:department rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Unisex"/>
+        <untitled-ontology-11:hasColor rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Black"/>
+        <untitled-ontology-11:label rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Samba"/>
+        <untitled-ontology-11:product rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Adidas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#S_and_S -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#S_and_S"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Samba -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Samba"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Sarah_Pearse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Sarah_Pearse"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Shoes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Shoes">
+        <untitled-ontology-11:department rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Women"/>
+        <untitled-ontology-11:hasColor rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#White"/>
+        <untitled-ontology-11:label rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Reebok_uniseks-volwassene_Club_CSneaker"/>
+        <untitled-ontology-11:product rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#New_Balance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Silver -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Silver"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Slippers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Slippers">
+        <untitled-ontology-11:department rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Unisex"/>
+        <untitled-ontology-11:hasColor rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Black"/>
+        <untitled-ontology-11:label rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Adidas_Adilette_Aqua"/>
+        <untitled-ontology-11:product rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Adidas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Tablet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Tablet">
+        <untitled-ontology-11:hasColor rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Silver"/>
+        <untitled-ontology-11:label rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Microsoft_Surface_Pro_4"/>
+        <untitled-ontology-11:product rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Microsoft"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#The_Hobbit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#The_Hobbit"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#The_Retreat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#The_Retreat"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Thriller -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Thriller"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Tommy_Hilfiger_Boys_Basic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Tommy_Hilfiger_Boys_Basic"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Tragedy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Tragedy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Transworld -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Transworld"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Tshirt -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Tshirt">
+        <untitled-ontology-11:department rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Boys"/>
+        <untitled-ontology-11:hasColor rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#White"/>
+        <untitled-ontology-11:label rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Tommy_Hilfiger_Boys_Basic"/>
+        <untitled-ontology-11:material rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Cotton"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Unisex -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Unisex"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Watch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Watch">
+        <untitled-ontology-11:hasColor rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Black"/>
+        <untitled-ontology-11:label rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Apple_Watch_SE"/>
+        <untitled-ontology-11:product rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Apple"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#White -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#White"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#William_Shakespear -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#William_Shakespear"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Women -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Women"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Wool -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Wool"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#epic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#epic"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#haper_collins -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#haper_collins"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#hobbit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#hobbit">
+        <untitled-ontology-11:author rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#J_R_R_Tolkien"/>
+        <untitled-ontology-11:genre rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#epic"/>
+        <untitled-ontology-11:language rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#English"/>
+        <untitled-ontology-11:product rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#haper_collins"/>
+        <untitled-ontology-11:title rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#The_Hobbit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#iewu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#iewu">
+        <untitled-ontology-11:author rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Colleen_Hoover"/>
+        <untitled-ontology-11:genre rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Romance"/>
+        <untitled-ontology-11:language rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#English"/>
+        <untitled-ontology-11:product rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#S_and_S"/>
+        <untitled-ontology-11:title rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#It_Ends_With_Us"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#lyp -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#lyp">
+        <untitled-ontology-11:author rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Maria_Rilke"/>
+        <untitled-ontology-11:genre rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Poetry"/>
+        <untitled-ontology-11:product rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Penguin"/>
+        <untitled-ontology-11:title rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Letters_to_a_Young_Poet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#tr -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#tr">
+        <untitled-ontology-11:author rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Sarah_Pearse"/>
+        <untitled-ontology-11:genre rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Thriller"/>
+        <untitled-ontology-11:language rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#English"/>
+        <untitled-ontology-11:product rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#Transworld"/>
+        <untitled-ontology-11:title rdf:resource="http://www.semanticweb.org/joaquin/ontologies/2023/9/untitled-ontology-11#The_Retreat"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
